@@ -20,6 +20,7 @@
     font-size: 2.4em;
     font-weight: 400;
     margin: 30px 0;
+    position: relative; /* 강조선 위치 지정을 위해 부모 요소에 상대적 위치 지정 */
 }
 
 .hedding::after {
@@ -32,6 +33,17 @@
     right: 0;
     margin: 0 auto;
     background: #7b7cd4;
+}
+
+.highlight {
+    content: ""; /* 가상 요소에 내용 추가 */
+    position: absolute;
+    bottom: -10px; /* 텍스트 중간에 강조선을 위치시키기 위한 설정 */
+    left: 50%; /* 텍스트 중앙 정렬 */
+    transform: translateX(-50%); /* 가운데 정렬 */
+    width: 50%; /* 강조선의 너비 설정 */
+    height: 2px; /* 강조선의 두께 설정 */
+    background-color: #ffcc00; /* 강조선의 색상 설정 */
 }
 
 .about_content {
