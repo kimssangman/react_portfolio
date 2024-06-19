@@ -18,7 +18,7 @@
         transform: translateY(0px);
     }
     to {
-        transform: translateY(-10px);
+        transform: translateY(-20px);
     }
 }
 
@@ -48,7 +48,7 @@
     display: flex;
     align-items: center;
     letter-spacing: 0.15em;
-    animation: typing 4.5s steps(40, end), blink 0.75s step-end infinite;
+    animation: typing 4s steps(40, end), blink 1s step-end infinite;
 }
 
 .icon {

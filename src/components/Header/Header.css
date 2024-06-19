@@ -9,6 +9,7 @@
 
 .hamburger_menu {
     font-family: Roboto, sans-serif;
+    background: rgba(0, 0, 0, 0.6);
     padding: 30px;
     cursor: pointer;
     margin: 0;
@@ -32,6 +33,7 @@
 
 .header_li {
     font-family: Roboto, sans-serif;
+    color: #fff;
     margin-right: 3rem;
     padding: 1.5rem;
     float: right;
@@ -56,4 +58,30 @@
 
 .header_li_mobile {
     margin: 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+}
+
+#home {
+    background-color: lightblue;
+}
+
+#about {
+    background-color: lightgreen;
+}
+
+#skills {
+    background-color: lightcoral;
+}
+
+#project {
+    background-color: lightgoldenrodyellow;
+}
+
+#contact {
+    background-color: lightgray;
 }
