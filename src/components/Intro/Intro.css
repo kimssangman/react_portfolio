@@ -1,0 +1,111 @@
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 45ch;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes moveScroll {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+.intro_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(/public/images/intro.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 24px;
+    width: 100%;
+}
+
+.typing_effect {
+    overflow: hidden;
+    border-right: 0.15em solid orange; /* 커서 효과 */
+    white-space: nowrap;
+    margin: 0 auto;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.15em;
+    animation: typing 4.5s steps(40, end), blink 0.75s step-end infinite;
+}
+
+.icon {
+    width: 100px;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    animation-name: moveScroll;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.icon_text {
+    font-size: 16px;
+}
+
+/* 화면 크기에 따라 글자 크기 조정 */
+@media (max-width: 420px) {
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 48ch;
+        }
+    }
+
+    @keyframes blink {
+        50% {
+            border-color: transparent;
+        }
+    }
+
+    .typing_effect {
+        border-right: 0.1em solid orange; /* 커서 효과 */
+        font-size: 0.8rem;
+        height: 25px;
+        display: flex;
+        align-items: center;
+    }
+
+    .icon {
+        width: 100px;
+        position: absolute;
+        top: 85%;
+        left: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .icon_text {
+        font-size: 16px;
+    }
+}
