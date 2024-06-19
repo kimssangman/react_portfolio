@@ -42,7 +42,9 @@
     border-right: 0.15em solid orange; /* 커서 효과 */
     white-space: nowrap;
     margin: 0 auto;
-    height: 30px;
+    height: 60px;
+    font-size: 44px;
+    font-weight: 800;
     display: flex;
     align-items: center;
     letter-spacing: 0.15em;
@@ -53,7 +55,7 @@
     width: 100px;
     position: absolute;
     top: 85%;
-    left: 50%;
+    left: 48%;
     display: flex;
     flex-direction: column;
     align-items: center;
