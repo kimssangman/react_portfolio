@@ -60,12 +60,41 @@
     gap: 40px;
 }
 
+.about_content_wrap {
+    display: flex;
+    gap: 20px;
+}
+
+.about_content_img {
+    width: 140px;
+}
+
 .about_content_title {
     font-size: 2rem;
     font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
 
 .about_section {
     display: block;
     unicode-bidi: isolate;
+}
+
+/* 화면 크기에 따라 글자 크기 조정 */
+@media (max-width: 420px) {
+    .about_content_wrap {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about_content_img {
+        width: 50%;
+    }
+
+    .about_title {
+        width: 50%;
+    }
 }

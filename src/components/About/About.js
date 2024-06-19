@@ -1,4 +1,5 @@
 import "./About.css";
+import profile from "../../assets/images/면접사진.jpg";
 
 function About() {
     return (
@@ -10,7 +11,15 @@ function About() {
                 </h1>
             </div>
             <div className="about_content">
-                <h1 className="about_content_title">Frontend Engineer</h1>
+                <div className="about_content_wrap">
+                    <img
+                        src={profile}
+                        alt="증명사진"
+                        className="about_content_img"
+                    />
+                    <h1 className="about_content_title">Front-End Engineer</h1>
+                </div>
+
                 <section className="about_section">
                     <span>
                         2년 차 웹 개발자로 Next.js와 Angular2, React, AWS,
