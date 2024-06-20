@@ -52,7 +52,7 @@ const cardData = [
         image: image4,
     },
     {
-        title: "개인 프로젝트 (23.5 ~ 23.6)",
+        title: "개인 프로젝트 (23. 11 ~ 24. 2)",
         description: `
         ο 기술적인 역량 향상을 위한 개인프로젝트
 

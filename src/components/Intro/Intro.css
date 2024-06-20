@@ -43,12 +43,12 @@
     white-space: nowrap;
     margin: 0 auto;
     height: 60px;
-    font-size: 44px;
+    font-size: 2rem;
     font-weight: 800;
     display: flex;
     align-items: center;
     letter-spacing: 0.15em;
-    animation: typing 4s steps(40, end), blink 1s step-end infinite;
+    animation: typing 4s steps(45, end), blink 1s step-end infinite;
 }
 
 .icon {
@@ -73,19 +73,8 @@
 
 /* 화면 크기에 따라 글자 크기 조정 */
 @media (max-width: 420px) {
-    @keyframes typing {
-        from {
-            width: 0;
-        }
-        to {
-            width: 48ch;
-        }
-    }
-
-    @keyframes blink {
-        50% {
-            border-color: transparent;
-        }
+    .intro_container {
+        font-size: 16px;
     }
 
     .typing_effect {
@@ -94,6 +83,7 @@
         height: 25px;
         display: flex;
         align-items: center;
+        animation: typing 4s steps(45, end), blink 1s step-end infinite;
     }
 
     .icon {

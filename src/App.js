@@ -5,6 +5,13 @@ import Header from "./components/Header/Header";
 import HompageLayout from "./pages/HomepageLayout/HomepageLayout";
 
 function App() {
+    /**--------------------------------------------
+     * 헤더 메뉴를 누르면 해당 위치로 이동
+     * 
+     * 2. HomepageLayout 컴포넌트에서 scrollToRef 객체를 Header 컴포넌트로 props로 전달
+     --------------------------------------------*/
+    const scrollToRef = {};
+
     return (
         <div className="App">
             <Routes>
@@ -15,8 +22,8 @@ function App() {
                     path="/"
                     element={
                         <>
-                            <Header />
-                            <HompageLayout />
+                            <Header scrollToRef={scrollToRef} />
+                            <HompageLayout scrollToRef={scrollToRef} />
                         </>
                     }
                 />
