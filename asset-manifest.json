@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.3de27458.css",
-    "main.js": "/static/js/main.919f2ad8.js",
-    "static/js/453.bb257cf5.chunk.js": "/static/js/453.bb257cf5.chunk.js",
-    "static/media/intro.jpg": "/static/media/intro.a6c72a2cd50c0452e238.jpg",
-    "static/media/면접사진.jpg": "/static/media/면접사진.75004e19abfbd0ffde9b.jpg",
-    "static/media/sass.png": "/static/media/sass.a2591e27bc692562995c.png",
-    "static/media/recoil.png": "/static/media/recoil.bc6e0e15b1af032a12d7.png",
-    "static/media/nextjs.png": "/static/media/nextjs.b0f374241562bdf5ab45.png",
-    "static/media/javascript.png": "/static/media/javascript.28d87eb26073cbc28c61.png",
-    "static/media/redux.png": "/static/media/redux.9d8de64fbcbcdad9b6f8.png",
-    "static/media/react.png": "/static/media/react.0f0770d11005fa1eadb0.png",
-    "static/media/rxjs.png": "/static/media/rxjs.fcc06615aad95d3edca2.png",
-    "static/media/css.png": "/static/media/css.8d6731b1bfa5448337ae.png",
-    "static/media/nodejs.png": "/static/media/nodejs.c62dce9a35f28786a1c3.png",
-    "static/media/typescript.png": "/static/media/typescript.9ca86337ef133c4b00ef.png",
-    "index.html": "/index.html",
-    "main.3de27458.css.map": "/static/css/main.3de27458.css.map",
-    "main.919f2ad8.js.map": "/static/js/main.919f2ad8.js.map",
-    "453.bb257cf5.chunk.js.map": "/static/js/453.bb257cf5.chunk.js.map"
+    "main.css": "/react_portfolio/static/css/main.b6b30606.css",
+    "main.js": "/react_portfolio/static/js/main.6b96d42c.js",
+    "static/js/453.bb257cf5.chunk.js": "/react_portfolio/static/js/453.bb257cf5.chunk.js",
+    "static/media/intro.jpg": "/react_portfolio/static/media/intro.a6c72a2cd50c0452e238.jpg",
+    "static/media/면접사진.jpg": "/react_portfolio/static/media/면접사진.75004e19abfbd0ffde9b.jpg",
+    "static/media/sass.png": "/react_portfolio/static/media/sass.a2591e27bc692562995c.png",
+    "static/media/recoil.png": "/react_portfolio/static/media/recoil.bc6e0e15b1af032a12d7.png",
+    "static/media/nextjs.png": "/react_portfolio/static/media/nextjs.b0f374241562bdf5ab45.png",
+    "static/media/javascript.png": "/react_portfolio/static/media/javascript.28d87eb26073cbc28c61.png",
+    "static/media/redux.png": "/react_portfolio/static/media/redux.9d8de64fbcbcdad9b6f8.png",
+    "static/media/react.png": "/react_portfolio/static/media/react.0f0770d11005fa1eadb0.png",
+    "static/media/rxjs.png": "/react_portfolio/static/media/rxjs.fcc06615aad95d3edca2.png",
+    "static/media/css.png": "/react_portfolio/static/media/css.8d6731b1bfa5448337ae.png",
+    "static/media/nodejs.png": "/react_portfolio/static/media/nodejs.c62dce9a35f28786a1c3.png",
+    "static/media/typescript.png": "/react_portfolio/static/media/typescript.9ca86337ef133c4b00ef.png",
+    "index.html": "/react_portfolio/index.html",
+    "main.b6b30606.css.map": "/react_portfolio/static/css/main.b6b30606.css.map",
+    "main.6b96d42c.js.map": "/react_portfolio/static/js/main.6b96d42c.js.map",
+    "453.bb257cf5.chunk.js.map": "/react_portfolio/static/js/453.bb257cf5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3de27458.css",
-    "static/js/main.919f2ad8.js"
+    "static/css/main.b6b30606.css",
+    "static/js/main.6b96d42c.js"
   ]
 }
