@@ -88,8 +88,8 @@ function Project() {
                     observer={true}
                     observeParents={true}
                     watchSlidesProgress={true}
-                    slidesPerView={3} // 보여질 개수
-                    spaceBetween={600} // 아이템 사이 간격
+                    // slidesPerView={3} // 보여질 개수
+                    // spaceBetween={600} // 아이템 사이 간격
                     slidesPerGroup={1} // 한번에 슬라이딩될 개수
                     centeredSlides={true} // 센터모드
                     coverflowEffect={{
@@ -103,17 +103,20 @@ function Project() {
                     // slidesOffsetAfter={150}
                     loop={true}
                     breakpoints={{
-                        640: {
+                        420: {
                             slidesPerView: 1,
-                            spaceBetween: 10,
+                            slidesPerGroup: 1,
+                            spaceBetween: 5,
                         },
                         768: {
                             slidesPerView: 1.5,
-                            spaceBetween: 20,
+                            slidesPerGroup: 1,
+                            spaceBetween: 10,
                         },
                         1024: {
-                            slidesPerView: 1.8,
-                            spaceBetween: 30,
+                            slidesPerView: 3,
+                            slidesPerGroup: 1,
+                            spaceBetween: 20,
                         },
                     }}
                     modules={[

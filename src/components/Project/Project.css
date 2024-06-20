@@ -183,3 +183,17 @@
 .card.clickable:hover {
     transform: scale(1.05); /* Scale up the card on hover */
 }
+
+/* 화면 크기에 따라 글자 크기 조정 */
+/* 화면 크기에 따라 글자 크기 조정 */
+
+@media (max-width: 720px) {
+    .projects_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .swiper-slide {
+        width: 350px;
+    }
+}
