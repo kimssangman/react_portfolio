@@ -1,12 +1,17 @@
 {
   "files": {
-    "main.css": "/react_portfolio/static/css/main.b6b30606.css",
-    "main.js": "/react_portfolio/static/js/main.6b96d42c.js",
+    "main.css": "/react_portfolio/static/css/main.8c429def.css",
+    "main.js": "/react_portfolio/static/js/main.925ee25c.js",
     "static/js/453.bb257cf5.chunk.js": "/react_portfolio/static/js/453.bb257cf5.chunk.js",
+    "static/media/포테이톡스2.png": "/react_portfolio/static/media/포테이톡스2.561e608872206a01a66f.png",
     "static/media/intro.jpg": "/react_portfolio/static/media/intro.a6c72a2cd50c0452e238.jpg",
     "static/media/면접사진.jpg": "/react_portfolio/static/media/면접사진.75004e19abfbd0ffde9b.jpg",
+    "static/media/영어.png": "/react_portfolio/static/media/영어.b86eb86d370c2017540e.png",
+    "static/media/이로운농장.png": "/react_portfolio/static/media/이로운농장.285f40976701bb66fd64.png",
     "static/media/sass.png": "/react_portfolio/static/media/sass.a2591e27bc692562995c.png",
+    "static/media/개인프로젝트.png": "/react_portfolio/static/media/개인프로젝트.c1b321d66c547f563e64.png",
     "static/media/recoil.png": "/react_portfolio/static/media/recoil.bc6e0e15b1af032a12d7.png",
+    "static/media/김치2.png": "/react_portfolio/static/media/김치2.f600f28748b538710b17.png",
     "static/media/nextjs.png": "/react_portfolio/static/media/nextjs.b0f374241562bdf5ab45.png",
     "static/media/javascript.png": "/react_portfolio/static/media/javascript.28d87eb26073cbc28c61.png",
     "static/media/redux.png": "/react_portfolio/static/media/redux.9d8de64fbcbcdad9b6f8.png",
@@ -16,12 +21,12 @@
     "static/media/nodejs.png": "/react_portfolio/static/media/nodejs.c62dce9a35f28786a1c3.png",
     "static/media/typescript.png": "/react_portfolio/static/media/typescript.9ca86337ef133c4b00ef.png",
     "index.html": "/react_portfolio/index.html",
-    "main.b6b30606.css.map": "/react_portfolio/static/css/main.b6b30606.css.map",
-    "main.6b96d42c.js.map": "/react_portfolio/static/js/main.6b96d42c.js.map",
+    "main.8c429def.css.map": "/react_portfolio/static/css/main.8c429def.css.map",
+    "main.925ee25c.js.map": "/react_portfolio/static/js/main.925ee25c.js.map",
     "453.bb257cf5.chunk.js.map": "/react_portfolio/static/js/453.bb257cf5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6b30606.css",
-    "static/js/main.6b96d42c.js"
+    "static/css/main.8c429def.css",
+    "static/js/main.925ee25c.js"
   ]
 }
