@@ -1,3 +1,52 @@
+# 배포 방법
+
+### 1. 라이브러리 설치
+
+```
+npm install gh-pages --save-dev
+```
+
+### 2. package.json 수정
+
+```
+"name": "react_portfolio",
+    "version": "0.1.0",
+    "private": true,
+    "homepage": "https://kimssangman.github.io/react_portfolio", <- 여기
+    "dependencies": {
+        "@testing-library/jest-dom": "^5.17.0",
+        "@testing-library/react": "^13.4.0",
+        "@testing-library/user-event": "^13.5.0",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-icons": "^5.2.1",
+        "react-router-dom": "^6.22.3",
+        "react-scripts": "5.0.1",
+        "swiper": "^11.1.4",
+        "web-vitals": "^2.1.4"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "predeploy": "npm run build",    <- 여기
+        "deploy": "gh-pages -d build",   <- 여기
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+```
+
+### 3. 배포
+
+```
+npm run deploy
+```
+
+### 4. 깃허브에서 수정
+
+-   배포할 저장소 > settings > pages > Branch에 main으로 되어 있는 걸 gh-pages로 수정 후 저장
+
+### 5. 완료
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
