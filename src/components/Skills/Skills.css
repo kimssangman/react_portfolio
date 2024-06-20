@@ -1,0 +1,153 @@
+.heading {
+    font-size: 2.4em;
+    font-weight: 400;
+    margin: 30px 0;
+    position: relative;
+    opacity: 0; /* 초기에 숨기기 */
+}
+
+.animate {
+    animation: fade-in 1.5s ease forwards; /* 애니메이션 적용 */
+    opacity: 1; /* 애니메이션이 끝나도 투명도 유지 */
+}
+
+.skills_container {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    background: #f1efef;
+    height: 100vh;
+    width: 100%;
+}
+
+.skills_title {
+    margin-left: 6vw;
+    margin-right: 12vw;
+    width: 25vw;
+    box-sizing: border-box;
+    text-align: center;
+    align-self: center;
+}
+
+.skills_highlight {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 2px;
+    background-color: #0099ff;
+}
+
+.skills_content {
+    font-family: Noto Sans KR, sans-serif;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    box-sizing: border-box;
+    margin-right: 8vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.skills_content_wrap {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+/* Specific skill icons */
+.skill_icon {
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    background-position: center; /* 배경 이미지 중앙 정렬 */
+    text-align: center;
+    display: inline-block;
+    border-radius: 30px 30px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.html {
+    background-image: url("/public/images/html.png");
+}
+
+.css {
+    background-image: url("/public/images/css.png");
+}
+
+.sass {
+    background-image: url("/public/images/sass.png");
+}
+
+.javascript {
+    background-image: url("/public/images/javascript.png");
+}
+
+.typescript {
+    background-image: url("/public/images/typescript.png");
+}
+
+.react {
+    background-image: url("/public/images/react.png");
+}
+
+.nextjs {
+    background-image: url("/public/images/nextjs.png");
+}
+
+.angular {
+    background-image: url("/public/images/angular.png");
+}
+
+.recoil {
+    background-image: url("/public/images/recoil.png");
+}
+
+.redux {
+    background-image: url("/public/images/redux.png");
+}
+
+.rxjs {
+    background-image: url("/public/images/rxjs.png");
+}
+
+.nodejs {
+    background-image: url("/public/images/nodejs.png");
+}
+
+.mongodb {
+    background-image: url("/public/images/mongodb.png");
+}
+
+.git {
+    background-image: url("/public/images/git.png");
+}
+
+.ec2 {
+    background-image: url("/public/images/ec2.png");
+}
+
+/* 화면 크기에 따라 글자 크기 조정 */
+@media (max-width: 420px) {
+    .skills_content_wrap {
+        gap: 15px 60px;
+    }
+
+    .skill_icon {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        flex-direction: column;
+    }
+}

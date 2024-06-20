@@ -1,5 +1,5 @@
+import useMenu from "../../hooks/useMenu";
 import "./Header.css";
-import useMenu from "../../hooks/menu_hook";
 
 function Header() {
     // menu hook

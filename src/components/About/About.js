@@ -1,50 +1,18 @@
-import { useEffect, useRef } from "react";
+import React from "react";
+
 import "./About.css";
 import profile from "../../assets/images/면접사진.jpg";
+import useAnimation from "../../hooks/useAnimation";
 
 function About() {
-    const headingRef = useRef(null);
-
-    useEffect(() => {
-        const headingElement = headingRef.current;
-
-        // Intersection Observer 생성
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        // 요소가 화면에 들어왔을 때 애니메이션 추가
-                        headingElement.classList.add("animate-heading");
-                    } else {
-                        // 요소가 화면에서 나갔을 때 애니메이션 제거 (옵션)
-                        headingElement.classList.remove("animate-heading");
-                    }
-                });
-            },
-            {
-                threshold: 0.5, // 요소가 반 이상 화면에 보일 때 감지
-            }
-        );
-
-        // Intersection Observer를 heading 요소에 등록
-        if (headingElement) {
-            observer.observe(headingElement);
-        }
-
-        // Clean up: 컴포넌트가 언마운트될 때 Observer 해제
-        return () => {
-            if (headingElement) {
-                observer.unobserve(headingElement);
-            }
-        };
-    }, []);
+    const headingRef = useAnimation();
 
     return (
         <div className="about_container">
             <div className="about_title">
                 <h1 className="heading" ref={headingRef}>
                     About Me
-                    <span className="highlight"></span>
+                    <span className="about_highlight"></span>
                 </h1>
             </div>
             <div className="about_content">
@@ -59,7 +27,7 @@ function About() {
 
                 <section className="about_section">
                     <span>
-                        2년 차 웹 개발자로 Next.js와 Angular2, React, AWS,
+                        2년 차 웹 개발자로 React와 Next.js, Angular2, AWS,
                         Github를 이용하여 프로젝트 설계, 배포, 운영까지 해온
                         경험을 가지고 있습니다.
                         <br />

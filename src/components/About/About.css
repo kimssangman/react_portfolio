@@ -17,7 +17,7 @@
     opacity: 0; /* 초기에 숨기기 */
 }
 
-.animate-heading {
+.animate {
     animation: fade-in 1.5s ease forwards; /* 애니메이션 적용 */
     opacity: 1; /* 애니메이션이 끝나도 투명도 유지 */
 }
@@ -40,7 +40,7 @@
     align-self: center;
 }
 
-.highlight {
+.about_highlight {
     content: "";
     position: absolute;
     bottom: -10px;

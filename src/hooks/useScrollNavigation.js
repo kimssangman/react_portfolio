@@ -40,6 +40,21 @@ function useScrollNavigation() {
     }, []);
 
     /**------------------------------------------------
+     * 스크롤 이벤트를 일정 시간 내 재호출 제한
+     *
+     * 스크롤 이벤트 시 맨 아래 페이지로 내려가는 것을 방지
+     ------------------------------------------------*/
+    function throttle(fn, wait) {
+        let time = Date.now();
+        return function (...args) {
+            if (time + wait - Date.now() < 0) {
+                fn(...args);
+                time = Date.now();
+            }
+        };
+    }
+
+    /**------------------------------------------------
      * 스크롤 이벤트를 처리하는 함수
      *
      * 스크롤 이벤트를 처리하여 현재 스크롤 위치에 따라 현재 페이지를 업데이트합니다.
@@ -73,26 +88,33 @@ function useScrollNavigation() {
      *
      * 마우스 휠 이벤트를 처리하여 페이지를 위아래로 스크롤하도록 합니다.
      ------------------------------------------------*/
-    const handleWheel = (e) => {
+    const handleWheel = throttle((e) => {
         if (e.deltaY > 0) {
             let nextPage = currentInputs.currentPage + 1;
             if (nextPage <= totalPageNumber) {
+                setCurrentInputs((prevState) => ({
+                    ...prevState,
+                    currentPage: nextPage,
+                }));
                 window.scrollTo({
-                    top: currentInputs.currentWindowHeight * nextPage,
+                    top: currentInputs.currentWindowHeight * (nextPage - 1),
                     behavior: "smooth",
                 });
             }
-        }
-        if (e.deltaY < 0) {
+        } else if (e.deltaY < 0) {
             let prevPage = currentInputs.currentPage - 1;
             if (prevPage >= 1) {
+                setCurrentInputs((prevState) => ({
+                    ...prevState,
+                    currentPage: prevPage,
+                }));
                 window.scrollTo({
                     top: currentInputs.currentWindowHeight * (prevPage - 1),
                     behavior: "smooth",
                 });
             }
         }
-    };
+    }, 100); // 100ms 동안 한 번만 호출되도록 설정
 
     // 마우스 휠 이벤트 등록
     useEffect(() => {
