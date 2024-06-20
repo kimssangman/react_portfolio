@@ -8,36 +8,68 @@ import "swiper/css/scrollbar";
 import useAnimation from "../../hooks/useAnimation";
 import "./Project.css";
 
+import image1 from "../../assets/images/이로운농장.png";
+import image2 from "../../assets/images/김치2.png";
+import image3 from "../../assets/images/영어.png";
+import image4 from "../../assets/images/포테이톡스2.png";
+import image5 from "../../assets/images/개인프로젝트.png";
+
 const cardData = [
     {
-        title: "Card 1",
-        description: "This is the description for card 1.",
-        image: "path/to/image1.jpg", // 이미지 경로를 수정하세요
+        title: "버섯농장 상태관리 시스템 (23. 5 ~ 23. 6)",
+        description: `
+        ο 그래프활용, 데이터를 시각화하여 버섯 재배를 용이
+
+        #React.js, #Recoil, #Node.js, #MongoDB`,
+        link: "",
+        image: image1,
     },
     {
-        title: "Card 2",
-        description: "This is the description for card 2.",
-        image: "path/to/image2.jpg", // 이미지 경로를 수정하세요
+        title: "김치공장 통합 시스템 (22. 12 ~ 23. 4)",
+        description: `
+        ο 실시간 모니터링 및 분석으로 김치 생산량 증대 및 불량률 감소
+        
+        #Angaulr2, #Rxjs, #Node.js, #MongoDB`,
+        link: "",
+        image: image2,
     },
     {
-        title: "Card 3",
-        description: "This is the description for card 3.",
-        image: "path/to/image3.jpg", // 이미지 경로를 수정하세요
+        title: "교육용 영상 플랫폼 (22. 10 ~ 22. 12)",
+        description: `
+        ο 학원 운영 효율성과 학부모 만족도 향상
+        
+        #React.js, #Recoil, #Node.js, #MongoDB`,
+        link: "",
+        image: image3,
     },
     {
-        title: "Card 4",
-        description: "This is the description for card 4.",
-        image: "path/to/image4.jpg", // 이미지 경로를 수정하세요
+        title: "협업용 플랫폼 (21. 5 ~ 22. 9)",
+        description: `
+        ο 직원 관리에 따른 관리자 작업 효율성과 직원 업무 효율성 향상
+        
+        #Angaulr2, #Rxjs, #Node.js, #MongoDB`,
+        link: "https://potatocs.com",
+        image: image4,
     },
     {
-        title: "Card 5",
-        description: "This is the description for card 5.",
-        image: "path/to/image5.jpg", // 이미지 경로를 수정하세요
+        title: "개인 프로젝트 (23.5 ~ 23.6)",
+        description: `
+        ο 기술적인 역량 향상을 위한 개인프로젝트
+
+        #Next.js, #Recoil, #Node.js, #MongoDB`,
+        link: "https://www.kimsangmin.com",
+        image: image5,
     },
 ];
 
 function Project() {
     const headingRef = useAnimation();
+
+    const handleCardClick = (link) => {
+        if (link) {
+            window.open(link, "_blank", "noopener,noreferrer");
+        }
+    };
 
     return (
         <div className="projects_container">
@@ -76,11 +108,11 @@ function Project() {
                             spaceBetween: 10,
                         },
                         768: {
-                            slidesPerView: 2,
+                            slidesPerView: 1.5,
                             spaceBetween: 20,
                         },
                         1024: {
-                            slidesPerView: 3,
+                            slidesPerView: 1.8,
                             spaceBetween: 30,
                         },
                     }}
@@ -94,10 +126,26 @@ function Project() {
                 >
                     {cardData.map((card, index) => (
                         <SwiperSlide key={index}>
-                            <div className="card">
-                                <img src={card.image} alt={card.title} />
+                            <div
+                                className={`card ${
+                                    card.link ? "clickable" : ""
+                                }`}
+                                onClick={() => handleCardClick(card.link)}
+                            >
+                                <img
+                                    src={card.image}
+                                    alt={card.title}
+                                    className="card_img"
+                                />
                                 <div className="card_title">{card.title}</div>
-                                <div className="card_description">
+                                <div
+                                    className="card_description"
+                                    style={{
+                                        whiteSpace: "pre-line",
+                                        display: "flex",
+                                        textAlign: "justify",
+                                    }}
+                                >
                                     {card.description}
                                 </div>
                             </div>

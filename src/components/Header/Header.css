@@ -29,6 +29,8 @@
     height: 64px;
     width: 775px;
     border-radius: 2px 2px 30px 30px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .header_li {
@@ -36,7 +38,6 @@
     color: #fff;
     margin-right: 3rem;
     padding: 1.5rem;
-    float: right;
     border: 0;
     cursor: pointer;
     opacity: 0.6;

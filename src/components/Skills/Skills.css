@@ -141,7 +141,13 @@
 /* 화면 크기에 따라 글자 크기 조정 */
 @media (max-width: 420px) {
     .skills_content_wrap {
-        gap: 15px 60px;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+    }
+
+    .skill {
+        width: 30px;
     }
 
     .skill_icon {
