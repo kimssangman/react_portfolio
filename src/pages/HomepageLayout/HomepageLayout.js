@@ -3,6 +3,7 @@ import Intro from "../../components/Intro/Intro";
 import "./HomepageLayout.css";
 import useScrollNavigation from "../../hooks/useScrollNavigation";
 import Skills from "../../components/Skills/Skills";
+import Project from "../../components/Project/Project";
 
 function HompageLayout() {
     const { wholePageRef } = useScrollNavigation();
@@ -12,6 +13,7 @@ function HompageLayout() {
             <Intro />
             <About />
             <Skills />
+            <Project />
         </div>
     );
 }
