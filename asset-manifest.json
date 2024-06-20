@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react_portfolio/static/css/main.2a589dfe.css",
+    "main.css": "/react_portfolio/static/css/main.7f8420ac.css",
     "main.js": "/react_portfolio/static/js/main.3c833ca1.js",
     "static/js/453.bb257cf5.chunk.js": "/react_portfolio/static/js/453.bb257cf5.chunk.js",
     "static/media/포테이톡스2.png": "/react_portfolio/static/media/포테이톡스2.561e608872206a01a66f.png",
@@ -21,12 +21,12 @@
     "static/media/nodejs.png": "/react_portfolio/static/media/nodejs.c62dce9a35f28786a1c3.png",
     "static/media/typescript.png": "/react_portfolio/static/media/typescript.9ca86337ef133c4b00ef.png",
     "index.html": "/react_portfolio/index.html",
-    "main.2a589dfe.css.map": "/react_portfolio/static/css/main.2a589dfe.css.map",
+    "main.7f8420ac.css.map": "/react_portfolio/static/css/main.7f8420ac.css.map",
     "main.3c833ca1.js.map": "/react_portfolio/static/js/main.3c833ca1.js.map",
     "453.bb257cf5.chunk.js.map": "/react_portfolio/static/js/453.bb257cf5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a589dfe.css",
+    "static/css/main.7f8420ac.css",
     "static/js/main.3c833ca1.js"
   ]
 }
