@@ -100,7 +100,7 @@ react_portfolio/
 
 - 접속 초기화면으로 타이핑하는 효과를 주어 시선을 끌게 만들었습니다.
 
-![image](https://github.com/kimssangman/react_portfolio/assets/136281131/1b7f2d54-6fa5-4889-bec4-f7750f31c812)
+![image](https://github.com/kimssangman/react_portfolio/assets/136281131/b461d12f-d19f-4bf0-ab33-c8f19fd81335)
 
 </br>
 </br>
@@ -109,7 +109,8 @@ react_portfolio/
 
 - About Me 화면으로 간략한 자기소개 페이지입니다.
 
-![image](https://github.com/kimssangman/react_portfolio/assets/136281131/b461d12f-d19f-4bf0-ab33-c8f19fd81335)
+![image](https://github.com/kimssangman/react_portfolio/assets/136281131/bcdfa951-b646-4595-9e45-eefbe103d3bd)
+
 
 </br>
 </br>
