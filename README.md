@@ -1,6 +1,8 @@
 # 김상민 포트폴리오
 
 ![image](https://github.com/kimssangman/react_portfolio/assets/136281131/1b7f2d54-6fa5-4889-bec4-f7750f31c812)
+![image](https://github.com/kimssangman/react_portfolio/assets/136281131/3c842b69-b35d-463b-bbd3-97943daba8b7)
+
 
 
 -   배포 URL : https://kimssangman.github.io/react_portfolio/
