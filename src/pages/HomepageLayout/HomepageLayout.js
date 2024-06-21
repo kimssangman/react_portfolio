@@ -5,6 +5,7 @@ import useScrollNavigation from "../../hooks/useScrollNavigation";
 import Skills from "../../components/Skills/Skills";
 import Project from "../../components/Project/Project";
 import React, { useEffect, useRef } from "react";
+import Contact from "../../components/Contact/Contact";
 
 function HompageLayout({ scrollToRef }) {
     const { wholePageRef } = useScrollNavigation();
@@ -43,6 +44,9 @@ function HompageLayout({ scrollToRef }) {
             </div>
             <div ref={projectRef}>
                 <Project />
+            </div>
+            <div ref={contactRef}>
+                <Contact />
             </div>
         </div>
     );

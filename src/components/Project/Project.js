@@ -29,7 +29,7 @@ const cardData = [
         description: `
         ο 실시간 모니터링 및 분석으로 김치 생산량 증대 및 불량률 감소
         
-        #Angaulr2, #Rxjs, #Node.js, #MongoDB`,
+        #Angular2, #Rxjs, #Node.js, #MongoDB`,
         link: "",
         image: image2,
     },
@@ -47,7 +47,7 @@ const cardData = [
         description: `
         ο 직원 관리에 따른 관리자 작업 효율성과 직원 업무 효율성 향상
         
-        #Angaulr2, #Rxjs, #Node.js, #MongoDB`,
+        #Angular2, #Rxjs, #Node.js, #MongoDB`,
         link: "https://potatocs.com",
         image: image4,
     },
@@ -69,6 +69,19 @@ function Project() {
         if (link) {
             window.open(link, "_blank", "noopener,noreferrer");
         }
+    };
+
+    const highlightKeywords = (text) => {
+        const keywords = ["#React.js", "#Angular2", "#Next.js"];
+        let highlightedText = text;
+        keywords.forEach((keyword) => {
+            const regex = new RegExp(`(${keyword})`, "g");
+            highlightedText = highlightedText.replace(
+                regex,
+                `<span class="keyword_color">${keyword}</span>`
+            );
+        });
+        return highlightedText;
     };
 
     return (
@@ -145,12 +158,13 @@ function Project() {
                                     className="card_description"
                                     style={{
                                         whiteSpace: "pre-line",
-                                        display: "flex",
-                                        textAlign: "justify",
                                     }}
-                                >
-                                    {card.description}
-                                </div>
+                                    dangerouslySetInnerHTML={{
+                                        __html: highlightKeywords(
+                                            card.description
+                                        ),
+                                    }}
+                                ></div>
                             </div>
                         </SwiperSlide>
                     ))}

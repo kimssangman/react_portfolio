@@ -19,6 +19,7 @@ function Skills() {
         { name: "Node.js", iconClass: "skill_icon nodejs" },
         { name: "Mongodb", iconClass: "skill_icon mongodb" },
         { name: "Git", iconClass: "skill_icon git" },
+        { name: "Github", iconClass: "skill_icon github" },
         { name: "Ec2", iconClass: "skill_icon ec2" },
     ];
 

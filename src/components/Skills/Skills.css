@@ -134,6 +134,10 @@
     background-image: url("/public/images/git.png");
 }
 
+.github {
+    background-image: url("/public/images/github.png");
+}
+
 .ec2 {
     background-image: url("/public/images/ec2.png");
 }
