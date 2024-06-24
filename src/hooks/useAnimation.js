@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import eventBus from "../eventBus/eventBus";
 
 function useAnimation() {
     const elementRef = useRef(null);
@@ -12,8 +13,10 @@ function useAnimation() {
             (entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
+                        const currentView = entry.target.textContent;
                         // 요소가 화면에 들어왔을 때 애니메이션 추가
                         element.classList.add("animate");
+                        eventBus.emit("currentView", currentView);
                     } else {
                         // 요소가 화면에서 나갔을 때 애니메이션 제거
                         element.classList.remove("animate");

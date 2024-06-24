@@ -37,6 +37,11 @@
     width: 100%;
 }
 
+.intro_title {
+    width: 1px;
+    opacity: 0;
+}
+
 .typing_effect {
     overflow: hidden;
     border-right: 0.15em solid orange; /* 커서 효과 */

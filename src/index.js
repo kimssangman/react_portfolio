@@ -5,6 +5,17 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 
+/**--------------------------------------------
+ * 배포 환경에서 console.log, console.warn 지우기
+ * paackage.json 따로 수정할 필요 없음 
+ * 해당 코드만 index.js에 추가하기
+ --------------------------------------------*/
+if (process.env.NODE_ENV === "production") {
+    console.log = () => {};
+    console.error = () => {};
+    console.debug = () => {};
+}
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>

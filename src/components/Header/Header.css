@@ -43,6 +43,10 @@
     opacity: 0.6;
 }
 
+.header_li.active {
+    opacity: 1;
+}
+
 .header_li:hover {
     opacity: 1;
 }
