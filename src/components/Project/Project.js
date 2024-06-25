@@ -13,6 +13,7 @@ import image2 from "../../assets/images/김치2.png";
 import image3 from "../../assets/images/영어.png";
 import image4 from "../../assets/images/포테이톡스2.png";
 import image5 from "../../assets/images/개인프로젝트.png";
+import image6 from "../../assets/images/개인프로젝트2.png";
 
 const cardData = [
     {
@@ -59,6 +60,15 @@ const cardData = [
         #Next.js, #Recoil, #Node.js, #MongoDB`,
         link: "https://www.kimsangmin.com",
         image: image5,
+    },
+    {
+        title: "개인 프로젝트 (24. 6 ~ 24. 6)",
+        description: `
+        ο 리액트 Three.js 튜토리얼
+
+        #React.js, #Three.js`,
+        link: "https://github.com/kimssangman/react-threejs",
+        image: image6,
     },
 ];
 
