@@ -64,7 +64,7 @@ const cardData = [
     {
         title: "개인 프로젝트 (24. 6 ~ 24. 6)",
         description: `
-        ο 리액트 Three.js 튜토리얼
+        ο 리액트 Three.js Fiber 튜토리얼
 
         #React.js, #Three.js`,
         link: "https://github.com/kimssangman/react-threejs",
